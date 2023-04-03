@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_authorizenet/version.rb'
+  message: Bump SolidusAuthorizenet to %{version}
+  tag: true
