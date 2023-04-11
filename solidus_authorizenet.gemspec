@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Authorize.NET payments for Solidus Stores'
   spec.description = 'Authorize.NET payments for Solidus Stores'
   spec.homepage = 'https://github.com/ramon/solidus_authorizenet#readme'
-  spec.license = 'BSD-3-Claus'
+  spec.license = 'BSD-3-Clause'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/ramon/solidus_authorizenet'
@@ -35,6 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'solidus_core', ['>= 3.4.0.dev', '< 4']
   spec.add_dependency 'solidus_support', ['>= 0.8.1', '< 1']
 
-  spec.add_development_dependency 'rails-controller-testing'
+  spec.add_development_dependency 'rails-controller-testing', '~> 1.0'
   spec.add_development_dependency 'solidus_dev_support', '~> 2.5'
 end

@@ -132,5 +132,13 @@ module SolidusAuthorizenet
     def reusable?
       true
     end
+
+    def gateway_customer_profile_id
+      ""
+    end
+
+    def gateway_payment_profile_id
+      ""
+    end
   end
 end
