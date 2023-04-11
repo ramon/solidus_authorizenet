@@ -49,8 +49,13 @@ module SolidusAuthorizenet
       gateway.authorize(money, source.to_active_merchant, options)
     end
 
+    # @param [SolidusAuthorizenet::Source] source
     def purchase(money, source, options = {})
       gateway.purchase(money, source.to_active_merchant, options)
+    end
+
+    def credit(money, authorization_id, options = {})
+      gateway.refund(money, authorization_id, options)
     end
   end
 end
