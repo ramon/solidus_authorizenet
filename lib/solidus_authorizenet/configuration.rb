@@ -2,9 +2,15 @@
 
 module SolidusAuthorizenet
   class Configuration
-    # Define here the settings for this extension, e.g.:
-    #
-    # attr_accessor :my_setting
+    attr_accessor :api_login_id
+    attr_accessor :transaction_key
+    attr_accessor :key
+
+    # @!attribute [rw] gateway
+    attr_writer :gateway
+    def gateway
+      @gateway ||= :sandbox
+    end
   end
 
   class << self

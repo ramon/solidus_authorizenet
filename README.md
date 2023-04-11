@@ -16,8 +16,22 @@ gem 'solidus_authorizenet'
 Bundle your dependencies and run the installation generator:
 
 ```shell
+bundle install
 bin/rails generate solidus_authorizenet:install
 ```
+
+## Basic Setup
+
+### Retrieve AuthorizeNet account details
+You'll need the following account details:
+- API Login ID
+- Transaction Key
+- Key
+
+These values can be obtained by logging in to your AutorizeNet account, going
+...
+
+### Create a new payment method
 
 ## Usage
 
@@ -66,7 +80,7 @@ Here's an example:
 ```
 $ bin/rails server
 => Booting Puma
-=> Rails 6.0.2.1 application starting in development
+=> Rails 7.0.4 application starting in development
 * Listening on tcp://127.0.0.1:3000
 Use Ctrl-C to stop
 ```
@@ -88,4 +102,4 @@ Please refer to the dedicated [page](https://github.com/solidusio/solidus/wiki/H
 
 ## License
 
-Copyright (c) 2023 [name of extension author], released under the New BSD License.
+Copyright (c) 2023 Stembolt and others contributors, released under the New BSD License.
