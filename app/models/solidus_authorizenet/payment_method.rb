@@ -34,7 +34,8 @@ module SolidusAuthorizenet
       {
         login: self.preferred_api_login_id,
         password: self.preferred_transaction_key,
-        test: self.preferred_test_mode
+        test_mode: self.preferred_test_mode,
+        server: self.preferred_server
       }
     end
 
